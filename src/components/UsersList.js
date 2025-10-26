@@ -12,7 +12,7 @@ export default function UsersList() {
   }, [dispatch]);
 
   if (isLoading) {
-    return <Skeleton times={6} className="h-10 w-full" />
+    return <Skeleton times={6} className="h-10 w-full"/>
   }
 
   if (error) {
@@ -20,8 +20,10 @@ export default function UsersList() {
   }
 
   const renderedUsers = data.map((user) => {
-    return <div key={user.id}>
-      <h1>{user.name}</h1>
+    return <div key={user.id} className="mb-2 border rounded">
+      <div className="flex p-2 justify-between items-center cursor-pointer">
+        {user.name}
+      </div>
     </div>
   })
 
