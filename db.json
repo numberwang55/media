@@ -1,6 +1,29 @@
 {
   "users": [
-    {"id":  1, "name":  "Myra"}
+    {
+      "id": 1,
+      "name": "Myra"
+    },
+    {
+      "name": "Tracey VonRueden",
+      "id": 2
+    },
+    {
+      "name": "Miss Ruby Wuckert",
+      "id": 3
+    },
+    {
+      "name": "Lorene Marvin",
+      "id": 4
+    },
+    {
+      "name": "Shane Beatty Jr.",
+      "id": 5
+    },
+    {
+      "name": "Anita McKenzie",
+      "id": 6
+    }
   ],
   "albums": [],
   "photos": []
