@@ -39,10 +39,8 @@ export default function UsersList() {
     <div>
       <div className="flex flex-row justify-between m-3">
         <h1 className="m-2 text-xl">Users</h1>
-        {isCreatingUser
-          ? "Creating User..."
-          : <Button onClick={handleAddUser}>Add User</Button>}
-        {creatingUserError && `${creatingUserError.message}`}
+        <Button onClick={handleAddUser} loading={isCreatingUser}>Add User</Button>
+        {creatingUserError && "Error creating user"}
       </div>
       {renderedUsers}
     </div>
