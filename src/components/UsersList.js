@@ -14,13 +14,8 @@ export default function UsersList() {
     setIsLoadingUsers(true);
     dispatch(fetchUsers())
       .unwrap()
-      .then(() => {
-        console.log("Success")
-        setIsLoadingUsers(false);
-      })
-      .catch((err) => {
-        console.error(err.message);
-      })
+      .catch((err) => setLoadingUsersError(err))
+      .finally(() => setIsLoadingUsers(false))
   }, [dispatch]);
 
   const handleAddUser = () => {
