@@ -1,6 +1,7 @@
 import {createSlice} from '@reduxjs/toolkit'
 import {fetchUsers} from "../thunks/fetchUsers";
 import {addUser} from "../thunks/addUser";
+import {deleteUser} from "../thunks/deleteUser";
 
 const usersSlice = createSlice({
   name: 'users',
