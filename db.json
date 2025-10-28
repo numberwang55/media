@@ -37,6 +37,22 @@
       "id": 13
     }
   ],
-  "albums": [],
+  "albums": [
+    {
+      "id": 100,
+      "title": "Hiking Trip",
+      "userId": 1
+    },
+    {
+      "title": "Luxurious Granite Hat",
+      "userId": 1,
+      "id": 101
+    },
+    {
+      "title": "Recycled Cotton Mouse",
+      "userId": 1,
+      "id": 102
+    }
+  ],
   "photos": []
 }
