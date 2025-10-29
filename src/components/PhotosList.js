@@ -14,12 +14,12 @@ export default function PhotosList({album}) {
 
   let content;
   if (isFetching) {
-    content = <Skeleton times={3} className="h-10 w-full"/>;
+    content = <Skeleton times={4} className="h-8 w-8"/>;
   } else if (error) {
     content = <div>Error loading photos</div>;
   } else {
     content = data.map((photo) => {
-      return <PhotosListItem photo={photo} key={photo.id} />
+      return <PhotosListItem photo={photo} key={photo.id}/>
     })
   }
 
@@ -28,6 +28,8 @@ export default function PhotosList({album}) {
       <div className="m-2 flex flex-row items-center justify-between">
         <h3 className="text-lg font-bold">Photos in {album.title}</h3>
         <Button loading={addPhotoResults.isLoading} onClick={handleAddPhoto}>Add Photo</Button>
+      </div>
+      <div>
         {content}
       </div>
     </div>
