@@ -29,7 +29,7 @@ export default function PhotosList({album}) {
         <h3 className="text-lg font-bold">Photos in {album.title}</h3>
         <Button loading={addPhotoResults.isLoading} onClick={handleAddPhoto}>Add Photo</Button>
       </div>
-      <div>
+      <div className="mx-8 flex flex-row flex-wrap justify-center">
         {content}
       </div>
     </div>
