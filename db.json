@@ -72,7 +72,18 @@
       "title": "Elegant Plastic Shirt",
       "userId": 4,
       "id": 110
+    },
+    {
+      "title": "Tasty Steel Chicken",
+      "userId": 1,
+      "id": 111
     }
   ],
-  "photos": []
+  "photos": [
+    {
+      "albumId": 100,
+      "url": "http://something.com",
+      "id": 1
+    }
+  ]
 }

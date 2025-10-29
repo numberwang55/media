@@ -1,7 +1,7 @@
 
 
-export default function PhotosListItem({album}) {
+export default function PhotosListItem({photo}) {
   return (
-    <div>{album.id}</div>
+    <div>{photo.url}</div>
   )
 }
